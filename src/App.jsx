@@ -43,20 +43,24 @@ genratePassword()
           Password Generator..
         </h1>
 
-        {/* Password + Copy */}
-        <div className="flex items-center gap-3 bg-white/20 rounded-lg p-3 shadow-inner">
-          <input
-            value={password}
-            className="flex-1 px-3 py-2 rounded-lg bg-white/70 text-gray-800 placeholder-gray-500 focus:outline-none shadow-md"
-            type="text"
-            placeholder="Password..."
-            readOnly
-            ref={passwordref}
-          />
-          <button onClick={CopyToCliboard} className="bg-gradient-to-r from-pink-600 to-purple-700 text-white font-semibold px-4 py-2 rounded-lg shadow-lg hover:scale-105 transition-transform">
-            CopyToCliboard
-          </button>
-        </div>
+       {/* Password + Copy */}
+<div className="flex flex-col sm:flex-row items-center gap-3 bg-white/20 rounded-lg p-3 shadow-inner">
+  <input
+    value={password}
+    className="w-full px-3 py-2 rounded-lg bg-white/70 text-gray-800 placeholder-gray-500 focus:outline-none shadow-md"
+    type="text"
+    placeholder="Password..."
+    readOnly
+    ref={passwordref}
+  />
+  <button
+    onClick={CopyToCliboard}
+    className="w-full sm:w-auto bg-gradient-to-r from-pink-600 to-purple-700 text-white font-semibold px-4 py-2 rounded-lg shadow-lg hover:scale-105 transition-transform"
+  >
+    CopyToCliboard
+  </button>
+</div>
+
 
         {/* Slider */}
         <div className="bg-white/20 rounded-lg p-4 shadow-inner flex flex-col gap-3 text-left">
