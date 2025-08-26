@@ -1,12 +1,94 @@
-# React + Vite
+# 🔐 Safe-KeyGen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and secure **Password Generator** built with **React + Tailwind CSS**.  
+This tool helps you create strong, customizable, and random passwords with ease.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+✅ Generate random passwords instantly  
+✅ Adjustable password length (6 to 100)  
+✅ Option to include numbers and special characters  
+✅ One-click **Copy to Clipboard**  
+✅ Responsive, modern UI with gradient background  
+✅ Built using React hooks (`useState`, `useEffect`, `useCallback`)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React** (Vite setup)
+- **Tailwind CSS** (styling)
+- **JavaScript ES6+**
+- **GitHub Pages / Vercel** (for deployment)
+
+---
+
+## 📂 Project Structure
+
+safe-keygen/
+│── public/ # Public assets
+│── src/
+│ ├── App.jsx # Main app component
+│ ├── App.css # Styling
+│ ├── main.jsx # Entry point
+│ └── assets/ # Images/icons
+│── package.json # Dependencies and scripts
+│── vite.config.js # Vite config
+└── README.md # Project documentation
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+
+# Clone the repository
+git clone https://github.com/Moin06-dev/safe-keygen.git
+
+# Navigate into the project
+cd safe-keygen
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+The app will be live at http://localhost:5173/ (default Vite port).
+
+📌 Usage
+Set desired password length using the slider.
+
+Toggle checkboxes to allow numbers and/or special characters.
+
+The generated password will appear in the input box.
+
+Click the Copy to Clipboard button to copy instantly.
+
+💡 Learning Highlights
+This project helped me practice:
+
+React hooks (useState, useEffect, useCallback)
+
+Controlled components (input, checkbox, range)
+
+Random password generation logic
+
+Tailwind CSS for styling
+
+Git & GitHub workflow
+
+🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+📜 License
+This project is licensed under the MIT License.
+
+
